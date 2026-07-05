@@ -1,12 +1,12 @@
 :root {
   --accent: #2f7d5b;
   --accent-dark: #1d5f43;
-  --text: #162019;
-  --muted: #67736b;
-  --soft: #f4f2eb;
-  --paper: #fffdfa;
-  --line: #dfddd5;
-  --line-strong: #c9c6bd;
+  --text: #181c1a;
+  --muted: #657069;
+  --soft: #f7f8f7;
+  --paper: #ffffff;
+  --line: #e3e6e3;
+  --line-strong: #cfd5d0;
 }
 
 * {
@@ -20,8 +20,7 @@ html {
 body {
   margin: 0;
   color: var(--text);
-  background:
-    linear-gradient(180deg, #f6f4ee 0, #fbfaf7 360px, #ffffff 760px);
+  background: #ffffff;
   font-size: 16px;
   line-height: 1.65;
   overflow-x: hidden;
@@ -85,13 +84,11 @@ nav a {
 .photo-wrap {
   position: relative;
   width: 220px;
-  aspect-ratio: 1;
+  aspect-ratio: 7 / 10;
   overflow: hidden;
   border: 1px solid var(--line-strong);
   border-radius: 6px;
-  background:
-    radial-gradient(circle at 30% 25%, rgba(47, 125, 91, 0.18), transparent 34%),
-    linear-gradient(145deg, #f9f7f0, #e7e2d5);
+  background: var(--soft);
 }
 
 .photo-wrap img,
@@ -134,10 +131,10 @@ nav a {
 h1 {
   margin: 0 0 20px;
   color: #101610;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(38px, 5vw, 54px);
-  font-weight: 600;
-  line-height: 1.05;
+  font-family: inherit;
+  font-size: clamp(34px, 4.4vw, 46px);
+  font-weight: 750;
+  line-height: 1.12;
   letter-spacing: 0;
 }
 

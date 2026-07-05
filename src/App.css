@@ -104,6 +104,9 @@ nav a {
 
 .photo-wrap img {
   object-fit: cover;
+  object-position: 50% 16%;
+  transform: scale(1.2);
+  transform-origin: 50% 18%;
   display: block;
 }
 

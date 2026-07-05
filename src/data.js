@@ -1,13 +1,17 @@
+import profilePhoto from "./assets/곽재현.jpg";
+
 export const profile = {
   name: "Jaehyun Kwak",
   title: "Ph.D. Student, Graduate School of AI, KAIST",
-  photo: "/profile.jpg",
+  photo: profilePhoto,
   advisor: "Prof. Se-Young Yun",
   email: "jaehyun98@kaist.ac.kr",
   interests: "Multimodal Large Language Model, Vision-Language Model",
   researchFocus:
     "More specifically, my current research focuses on visual reasoning in VLMs and methods for strengthening causality in latent representations.",
   links: {
+    kaist: "https://www.kaist.ac.kr/en/",
+    lab: "https://osi.kaist.ac.kr/",
     advisor: "https://fbsqkd.github.io/",
     cv: "https://drive.google.com/file/d/11hGj9fgn1KW_YHLPuHkcVbTzBO57RvUc/view?usp=sharing",
     scholar: "https://scholar.google.com/citations?user=8oiT-7EAAAAJ&hl=ko",

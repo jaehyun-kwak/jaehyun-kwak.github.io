@@ -95,7 +95,7 @@ a:hover {
 
 .about {
   display: grid;
-  grid-template-columns: 220px minmax(0, 1fr);
+  grid-template-columns: 250px minmax(0, 1fr);
   gap: 46px;
   align-items: start;
   margin-top: 0;
@@ -104,7 +104,7 @@ a:hover {
 
 .photo-wrap {
   position: relative;
-  width: 220px;
+  width: 250px;
   aspect-ratio: 1;
   overflow: hidden;
   border: 1px solid var(--line-strong);
@@ -345,7 +345,7 @@ h2 {
   }
 
   .photo-wrap {
-    width: 178px;
+    width: 200px;
   }
 
   .photo-fallback {

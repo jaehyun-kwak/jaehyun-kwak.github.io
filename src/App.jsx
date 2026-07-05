@@ -1,0 +1,154 @@
+import "./App.css";
+import { profile, news, publications, honors } from "./data";
+
+function ProfilePhoto() {
+  const initials = profile.name
+    .split(" ")
+    .map((part) => part[0])
+    .join("");
+
+  return (
+    <div className="photo-wrap">
+      <span className="photo-fallback" aria-hidden="true">
+        {initials}
+      </span>
+      <img
+        src={profile.photo}
+        alt={profile.name}
+        onError={(event) => {
+          event.currentTarget.style.display = "none";
+        }}
+      />
+    </div>
+  );
+}
+
+function Header() {
+  return (
+    <header className="site-header">
+      <a href="#about" className="site-title">
+        {profile.name}
+      </a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#news">News</a>
+        <a href="#research">Research</a>
+        <a href="#honors">Honors</a>
+        <a href={profile.links.cv}>CV</a>
+      </nav>
+    </header>
+  );
+}
+
+function About() {
+  return (
+    <section id="about" className="about">
+      <ProfilePhoto />
+
+      <div className="bio">
+        <p className="profile-title">{profile.title}</p>
+        <h1>{profile.name}</h1>
+
+        <p className="lead">
+          I am a Ph.D. student in the Graduate School of AI at KAIST, advised by{" "}
+          <a href="#">{profile.advisor}</a>. My research interests include{" "}
+          {profile.interests}.
+        </p>
+
+        <p>
+          Previously, I received my M.S. and B.S. degrees in Electrical
+          Engineering from KAIST.
+        </p>
+
+        <div className="contact" aria-label="Profile links">
+          <a href={profile.links.cv}>CV</a>
+          <a href={`mailto:${profile.email}`}>Email</a>
+          <a href={profile.links.scholar}>Google Scholar</a>
+          <a href={profile.links.github}>GitHub</a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function SectionTitle({ children }) {
+  return (
+    <div className="section-heading">
+      <h2>{children}</h2>
+    </div>
+  );
+}
+
+function News() {
+  return (
+    <section id="news">
+      <SectionTitle>News</SectionTitle>
+      <div className="news">
+        {news.map(([date, text]) => (
+          <div className="news-row" key={`${date}-${text}`}>
+            <div className="news-date">{date}</div>
+            <div>{text}</div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function Research() {
+  return (
+    <section id="research">
+      <SectionTitle>Research</SectionTitle>
+
+      <div className="pubs">
+        {publications.map((pub) => (
+          <article className="pub" key={pub.title}>
+            <div className="pub-main">
+              <h3>{pub.title}</h3>
+              <p className="authors">{pub.authors}</p>
+              <p className="venue">{pub.venue}</p>
+            </div>
+
+            {pub.note && <p className="note">{pub.note}</p>}
+
+            <div className="paper-links">
+              {Object.entries(pub.links).map(([label, href]) => (
+                <a key={label} href={href}>
+                  {label}
+                </a>
+              ))}
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function Honors() {
+  return (
+    <section id="honors">
+      <SectionTitle>Honors</SectionTitle>
+      <div className="honors">
+        {honors.map(([title, desc]) => (
+          <div className="honor" key={title}>
+            <strong>{title}</strong>
+            <p>{desc}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+export default function App() {
+  return (
+    <main className="page">
+      <Header />
+      <About />
+      <News />
+      <Research />
+      <Honors />
+    </main>
+  );
+}

@@ -112,6 +112,7 @@ a:hover {
   background: var(--soft);
 }
 
+.photo-wrap picture,
 .photo-wrap img,
 .photo-fallback {
   position: absolute;
@@ -120,9 +121,13 @@ a:hover {
   height: 100%;
 }
 
+.photo-wrap picture {
+  display: block;
+}
+
 .photo-wrap img {
   object-fit: cover;
-  object-position: 50% 0;
+  object-position: 70% 50%;
   display: block;
 }
 

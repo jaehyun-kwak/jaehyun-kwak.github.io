@@ -12,13 +12,18 @@ function ProfilePhoto() {
       <span className="photo-fallback" aria-hidden="true">
         {initials}
       </span>
-      <img
-        src={profile.photo}
-        alt={profile.name}
-        onError={(event) => {
-          event.currentTarget.style.display = "none";
-        }}
-      />
+      <picture>
+        {profile.photoSources?.map((source) => (
+          <source key={source.srcSet} srcSet={source.srcSet} type={source.type} />
+        ))}
+        <img
+          src={profile.photo}
+          alt={profile.name}
+          onError={(event) => {
+            event.currentTarget.style.display = "none";
+          }}
+        />
+      </picture>
     </div>
   );
 }

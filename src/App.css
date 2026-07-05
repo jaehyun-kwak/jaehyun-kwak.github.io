@@ -44,6 +44,9 @@ a:hover {
 }
 
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
   width: 100%;
   background: rgba(255, 255, 255, 0.96);
   border-bottom: 1px solid rgba(207, 213, 208, 0.86);

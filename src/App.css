@@ -258,6 +258,13 @@ h2 {
   line-height: 1.55;
 }
 
+.author-me {
+  font-weight: 750;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
 .venue {
   color: var(--accent-dark);
   font-size: 14px;

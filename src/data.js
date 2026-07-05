@@ -4,20 +4,22 @@ export const profile = {
   photo: "/profile.jpg",
   advisor: "Prof. Se-Young Yun",
   email: "jaehyun98@kaist.ac.kr",
-  interests:
-    "Multimodal Large Language Model, Vision-Language Model, Information Retrieval",
+  interests: "Multimodal Large Language Model, Vision-Language Model",
+  researchFocus:
+    "More specifically, my current research focuses on visual reasoning in VLMs and methods for strengthening causality in latent representations.",
   links: {
+    advisor: "https://fbsqkd.github.io/",
     cv: "https://drive.google.com/file/d/11hGj9fgn1KW_YHLPuHkcVbTzBO57RvUc/view?usp=sharing",
     scholar: "https://scholar.google.com/citations?user=8oiT-7EAAAAJ&hl=ko",
   },
 };
 
 export const news = [
-  ["2026", "When and Where to Attack? is now available on arXiv."],
-  ["2026", "DualDrift accepted to ICML 2026 Workshop."],
-  ["2025", "QuRe accepted to ICML 2025."],
-  ["2025", "SelfReplay accepted to SenSys 2025."],
-  ["2025", "Started my Ph.D. in the Graduate School of AI at KAIST."],
+  ["Jul. 2026", "DualDrift accepted to ICML 2026 Workshop."],
+  ["Feb. 2026", "When and Where to Attack? is now available on arXiv."],
+  ["Jul. 2025", "QuRe accepted to ICML 2025."],
+  ["May 2025", "SelfReplay accepted to SenSys 2025."],
+  ["Mar. 2025", "Started my Ph.D. in the Graduate School of AI at KAIST."],
 ];
 
 export const publications = [

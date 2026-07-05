@@ -41,6 +41,18 @@ function Header() {
   );
 }
 
+function AuthorList({ authors }) {
+  const name = profile.name;
+  const parts = authors.split(name);
+
+  return parts.map((part, index) => (
+    <span key={`${part}-${index}`}>
+      {index > 0 && <span className="author-me">{name}</span>}
+      {part}
+    </span>
+  ));
+}
+
 function About() {
   return (
     <section id="about" className="about">
@@ -52,8 +64,11 @@ function About() {
 
         <p className="lead">
           I am a Ph.D. student in the Graduate School of AI at KAIST, advised by{" "}
-          <a href="#">{profile.advisor}</a>. My research interests include{" "}
-          {profile.interests}.
+          <a href={profile.links.advisor} target="_blank" rel="noreferrer">
+            {profile.advisor}
+          </a>
+          . My research interests include {profile.interests}.{" "}
+          {profile.researchFocus}
         </p>
 
         <p>
@@ -109,7 +124,9 @@ function Research() {
           <article className="pub" key={pub.title}>
             <div className="pub-main">
               <h3>{pub.title}</h3>
-              <p className="authors">{pub.authors}</p>
+              <p className="authors">
+                <AuthorList authors={pub.authors} />
+              </p>
               <p className="venue">{pub.venue}</p>
             </div>
 

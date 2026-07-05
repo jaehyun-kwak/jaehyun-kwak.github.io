@@ -59,21 +59,20 @@ function About() {
       <ProfilePhoto />
 
       <div className="bio">
-        <p className="profile-title">{profile.title}</p>
         <h1>{profile.name}</h1>
 
         <p className="lead">
           I am a Ph.D. student in the Graduate School of AI at{" "}
           <a href={profile.links.kaist} target="_blank" rel="noreferrer">
             KAIST
-          </a>{" "}
-          and a member of{" "}
-          <a href={profile.links.lab} target="_blank" rel="noreferrer">
-            OSI Lab
           </a>
           {", advised by "}
           <a href={profile.links.advisor} target="_blank" rel="noreferrer">
             {profile.advisor}
+          </a>
+          {" in the "}
+          <a href={profile.links.lab} target="_blank" rel="noreferrer">
+            OSI Lab
           </a>
           . My research interests include {profile.interests}.{" "}
           {profile.researchFocus}

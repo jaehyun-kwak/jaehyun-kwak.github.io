@@ -11,6 +11,8 @@ node_modules
 dist
 dist-ssr
 *.local
+*.HEIC
+*.heic
 
 # Editor directories and files
 .vscode/*

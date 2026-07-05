@@ -1,11 +1,9 @@
 import profilePhoto from "./assets/곽재현_2.jpg";
-import profilePhotoHeic from "./assets/곽재현_2.HEIC";
 
 export const profile = {
   name: "Jaehyun Kwak",
   title: "Ph.D. Student, Graduate School of AI, KAIST",
   photo: profilePhoto,
-  photoSources: [{ srcSet: profilePhotoHeic, type: "image/heic" }],
   advisor: "Prof. Se-Young Yun",
   email: "jaehyun98@kaist.ac.kr",
   interests: "Multimodal Large Language Model, Vision-Language Model",

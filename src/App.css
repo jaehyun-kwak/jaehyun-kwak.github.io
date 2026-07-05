@@ -37,7 +37,8 @@ a:hover {
 }
 
 .page {
-  width: min(960px, calc(100% - 48px));
+  width: calc(100% - 48px);
+  max-width: 960px;
   margin: 0 auto;
   padding: 58px 0 88px;
   min-width: 0;
@@ -56,7 +57,8 @@ a:hover {
 .site-header-inner {
   display: flex;
   align-items: center;
-  width: min(1260px, calc(100% - 64px));
+  width: calc(100% - 64px);
+  max-width: 1260px;
   min-height: 70px;
   margin: 0 auto;
   gap: 30px;
@@ -95,7 +97,7 @@ a:hover {
 
 .about {
   display: grid;
-  grid-template-columns: 250px minmax(0, 1fr);
+  grid-template-columns: 342px minmax(0, 1fr);
   gap: 46px;
   align-items: start;
   margin-top: 0;
@@ -104,7 +106,7 @@ a:hover {
 
 .photo-wrap {
   position: relative;
-  width: 250px;
+  width: 342px;
   aspect-ratio: 1;
   overflow: hidden;
   border: 1px solid var(--line-strong);
@@ -317,9 +319,21 @@ h2 {
   font-weight: 700;
 }
 
+@media (max-width: 900px) {
+  .about {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .photo-wrap {
+    width: min(342px, 100%);
+  }
+}
+
 @media (max-width: 700px) {
   .page {
-    width: min(100% - 32px, 960px);
+    width: calc(100% - 32px);
+    max-width: 960px;
     padding-top: 42px;
   }
 
@@ -327,7 +341,8 @@ h2 {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    width: min(100% - 32px, 960px);
+    width: calc(100% - 32px);
+    max-width: 960px;
     min-height: auto;
     padding: 22px 0 17px;
     gap: 14px;

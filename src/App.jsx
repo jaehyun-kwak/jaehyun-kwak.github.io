@@ -1,5 +1,5 @@
 import "./App.css";
-import { profile, news, publications, honors } from "./data";
+import { profile, news, publications } from "./data";
 
 function ProfilePhoto() {
   const initials = profile.name
@@ -33,8 +33,9 @@ function Header() {
         <a href="#about">About</a>
         <a href="#news">News</a>
         <a href="#research">Research</a>
-        <a href="#honors">Honors</a>
-        <a href={profile.links.cv}>CV</a>
+        <a href={profile.links.cv} target="_blank" rel="noreferrer">
+          CV
+        </a>
       </nav>
     </header>
   );
@@ -61,10 +62,13 @@ function About() {
         </p>
 
         <div className="contact" aria-label="Profile links">
-          <a href={profile.links.cv}>CV</a>
+          <a href={profile.links.cv} target="_blank" rel="noreferrer">
+            CV
+          </a>
           <a href={`mailto:${profile.email}`}>Email</a>
-          <a href={profile.links.scholar}>Google Scholar</a>
-          <a href={profile.links.github}>GitHub</a>
+          <a href={profile.links.scholar} target="_blank" rel="noreferrer">
+            Google Scholar
+          </a>
         </div>
       </div>
     </section>
@@ -113,28 +117,12 @@ function Research() {
 
             <div className="paper-links">
               {Object.entries(pub.links).map(([label, href]) => (
-                <a key={label} href={href}>
+                <a key={label} href={href} target="_blank" rel="noreferrer">
                   {label}
                 </a>
               ))}
             </div>
           </article>
-        ))}
-      </div>
-    </section>
-  );
-}
-
-function Honors() {
-  return (
-    <section id="honors">
-      <SectionTitle>Honors</SectionTitle>
-      <div className="honors">
-        {honors.map(([title, desc]) => (
-          <div className="honor" key={title}>
-            <strong>{title}</strong>
-            <p>{desc}</p>
-          </div>
         ))}
       </div>
     </section>
@@ -148,7 +136,6 @@ export default function App() {
       <About />
       <News />
       <Research />
-      <Honors />
     </main>
   );
 }

@@ -7,14 +7,14 @@ export const profile = {
   interests:
     "Multimodal Large Language Model, Vision-Language Model, Information Retrieval",
   links: {
-    cv: "/cv.pdf",
-    scholar: "#",
-    github: "#",
+    cv: "https://drive.google.com/file/d/11hGj9fgn1KW_YHLPuHkcVbTzBO57RvUc/view?usp=sharing",
+    scholar: "https://scholar.google.com/citations?user=8oiT-7EAAAAJ&hl=ko",
   },
 };
 
 export const news = [
-  ["2026", "Serving as a peer reviewer for NeurIPS 2026 and ICML 2026."],
+  ["2026", "When and Where to Attack? is now available on arXiv."],
+  ["2026", "DualDrift accepted to ICML 2026 Workshop."],
   ["2025", "QuRe accepted to ICML 2025."],
   ["2025", "SelfReplay accepted to SenSys 2025."],
   ["2025", "Started my Ph.D. in the Graduate School of AI at KAIST."],
@@ -28,8 +28,8 @@ export const publications = [
       "Jaehyun Kwak, Nam Cao, Boryeong Cho, Segyu Lee, Sumyeong Ahn†, Se-Young Yun†",
     venue: "Under Review",
     note:
-      "Adversarial attack method for large vision-language models that progressively perturbs high-attention regions in a stage-wise manner.",
-    links: { Paper: "#" },
+      "Adversarial attack method that perturbs high-attention regions in a stage-wise manner.",
+    links: { Paper: "https://arxiv.org/pdf/2602.04356" },
   },
   {
     title:
@@ -38,7 +38,10 @@ export const publications = [
     venue: "ICML 2025",
     note:
       "Composed image retrieval method trained with self-paced learning and hard negative sampling.",
-    links: { Paper: "#", Code: "#" },
+    links: {
+      Paper: "https://arxiv.org/pdf/2507.12416",
+      Code: "https://github.com/jaehyun-kwak/QuRe",
+    },
   },
   {
     title:
@@ -47,8 +50,8 @@ export const publications = [
       "Hojung Jung*, Juhyeong Kim*, Jaehyun Kwak, Boryeong Cho, Junhyeok Yang, Youngrok Park, Sangmin Bae, Se-Young Yun",
     venue: "ICML 2026 Workshop",
     note:
-      "One-step generative modeling method that combines data-side forward drift and rollout-side reverse drift.",
-    links: { Paper: "#" },
+      "One-step generative modeling method combining data-side forward drift and rollout-side reverse drift.",
+    links: { Paper: "https://openreview.net/forum?id=H5J9zbBlHX" },
   },
   {
     title:
@@ -57,8 +60,8 @@ export const publications = [
       "Segyu Lee*, Boryeong Cho*, Hojung Jung*, Seokhyun An, Juhyeong Kim, Jaehyun Kwak, Yongjin Yang, Sangwon Jang, Youngrok Park, Wonjun Chang, Se-Young Yun",
     venue: "Under Review",
     note:
-      "Comprehensive safety benchmark for unified multimodal models across seven input/output modality settings.",
-    links: { Paper: "#" },
+      "Safety benchmark for unified multimodal models across seven input/output modality settings.",
+    links: { Paper: "https://arxiv.org/pdf/2603.17476" },
   },
   {
     title:
@@ -68,18 +71,13 @@ export const publications = [
     venue: "SenSys 2025",
     note:
       "Few-shot domain adaptation method addressing domain shift between pre-training and fine-tuning data.",
-    links: { Paper: "#" },
+    links: { Paper: "https://arxiv.org/pdf/2404.15305" },
   },
   {
     title: "Federated Learning with Incomplete Sensing Modalities",
     authors: "Adiba Orzikulova*, Jaehyun Kwak*, Jaemin Shin, Sung-Ju Lee",
     venue: "arXiv 2024",
-    note:
-      "Federated learning method for handling incomplete sensing modalities.",
-    links: { Paper: "#" },
+    note: "Federated learning method for handling incomplete sensing modalities.",
+    links: { Paper: "https://arxiv.org/pdf/2405.11828v1" },
   },
-];
-
-export const honors = [
-  ["Reviewer", "NeurIPS 2026 / ICML 2026 / MobiCom 2023–2024 / MobiSys 2023–2024"],
 ];

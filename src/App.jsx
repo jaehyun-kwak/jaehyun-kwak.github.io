@@ -1,5 +1,58 @@
+import { useEffect, useState } from "react";
 import "./App.css";
 import { profile, news, publications } from "./data";
+
+const navSections = [
+  { id: "about", label: "About" },
+  { id: "news", label: "News" },
+  { id: "research", label: "Research" },
+];
+
+function useActiveSection() {
+  const [activeSection, setActiveSection] = useState(navSections[0].id);
+
+  useEffect(() => {
+    let frameId = 0;
+
+    const updateActiveSection = () => {
+      const headerHeight =
+        document.querySelector(".site-header")?.getBoundingClientRect().height ??
+        0;
+      const activationLine = headerHeight + 32;
+      const activeId =
+        navSections
+          .map(({ id }) => {
+            const section = document.getElementById(id);
+
+            return section
+              ? { id, top: section.getBoundingClientRect().top }
+              : null;
+          })
+          .filter(Boolean)
+          .reverse()
+          .find(({ top }) => top <= activationLine)?.id ?? navSections[0].id;
+
+      setActiveSection(activeId);
+    };
+
+    const requestUpdate = () => {
+      cancelAnimationFrame(frameId);
+      frameId = requestAnimationFrame(updateActiveSection);
+    };
+
+    updateActiveSection();
+    window.addEventListener("scroll", requestUpdate, { passive: true });
+    window.addEventListener("resize", requestUpdate);
+
+    return () => {
+      cancelAnimationFrame(frameId);
+      window.removeEventListener("scroll", requestUpdate);
+      window.removeEventListener("resize", requestUpdate);
+    };
+  }, []);
+
+  return activeSection;
+}
 
 function ProfilePhoto() {
   const initials = profile.name
@@ -28,7 +81,7 @@ function ProfilePhoto() {
   );
 }
 
-function Header() {
+function Header({ activeSection }) {
   return (
     <header className="site-header">
       <div className="site-header-inner">
@@ -36,9 +89,16 @@ function Header() {
           {profile.name}
         </a>
         <nav className="site-nav" aria-label="Primary navigation">
-          <a href="#about">About</a>
-          <a href="#news">News</a>
-          <a href="#research">Research</a>
+          {navSections.map(({ id, label }) => (
+            <a
+              key={id}
+              href={`#${id}`}
+              className={activeSection === id ? "is-active" : undefined}
+              aria-current={activeSection === id ? "page" : undefined}
+            >
+              {label}
+            </a>
+          ))}
           <a href={profile.links.cv} target="_blank" rel="noreferrer">
             CV
           </a>
@@ -161,9 +221,11 @@ function Research() {
 }
 
 export default function App() {
+  const activeSection = useActiveSection();
+
   return (
     <>
-      <Header />
+      <Header activeSection={activeSection} />
       <main className="page">
         <About />
         <News />

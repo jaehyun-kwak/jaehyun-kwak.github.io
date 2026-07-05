@@ -1,4 +1,4 @@
-import profilePhoto from "./assets/곽재현_2.jpg";
+import profilePhoto from "./assets/Jaehyun Kwak_11.jpg";
 
 export const profile = {
   name: "Jaehyun Kwak",

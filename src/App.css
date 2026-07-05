@@ -39,38 +39,55 @@ a:hover {
 .page {
   width: min(960px, calc(100% - 48px));
   margin: 0 auto;
-  padding: 30px 0 88px;
+  padding: 58px 0 88px;
   min-width: 0;
 }
 
 .site-header {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid rgba(207, 213, 208, 0.86);
+  box-shadow: 0 2px 8px rgba(17, 24, 39, 0.06);
+}
+
+.site-header-inner {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 28px;
-  margin-bottom: 54px;
-  padding-bottom: 18px;
-  border-bottom: 1px solid rgba(201, 198, 189, 0.85);
+  width: min(1260px, calc(100% - 64px));
+  min-height: 70px;
+  margin: 0 auto;
+  gap: 30px;
 }
 
 .site-title {
   color: var(--text);
-  font-size: 15px;
-  font-weight: 700;
+  font-size: 22px;
+  font-weight: 760;
   letter-spacing: 0;
   white-space: nowrap;
 }
 
-nav {
+.site-nav {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 26px;
 }
 
-nav a {
+.site-nav a {
   color: #323b35;
-  font-size: 14px;
-  line-height: 1;
+  font-size: 15px;
+  font-weight: 520;
+  line-height: 1.2;
+}
+
+.site-nav a:hover {
+  color: var(--accent-dark);
+  text-decoration: none;
+}
+
+.site-nav a:first-child {
+  color: var(--accent-dark);
+  font-weight: 760;
 }
 
 .about {
@@ -78,6 +95,7 @@ nav a {
   grid-template-columns: 220px minmax(0, 1fr);
   gap: 46px;
   align-items: start;
+  margin-top: 0;
   margin-bottom: 64px;
 }
 
@@ -294,17 +312,20 @@ h2 {
 @media (max-width: 700px) {
   .page {
     width: min(100% - 32px, 960px);
-    padding-top: 22px;
+    padding-top: 42px;
   }
 
-  .site-header {
-    align-items: flex-start;
+  .site-header-inner {
     flex-direction: column;
-    gap: 16px;
-    margin-bottom: 36px;
+    align-items: flex-start;
+    justify-content: center;
+    width: min(100% - 32px, 960px);
+    min-height: auto;
+    padding: 22px 0 17px;
+    gap: 14px;
   }
 
-  nav {
+  .site-nav {
     flex-wrap: wrap;
     gap: 13px 18px;
   }

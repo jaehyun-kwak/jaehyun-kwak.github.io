@@ -26,17 +26,19 @@ function ProfilePhoto() {
 function Header() {
   return (
     <header className="site-header">
-      <a href="#about" className="site-title">
-        {profile.name}
-      </a>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#news">News</a>
-        <a href="#research">Research</a>
-        <a href={profile.links.cv} target="_blank" rel="noreferrer">
-          CV
+      <div className="site-header-inner">
+        <a href="#about" className="site-title">
+          {profile.name}
         </a>
-      </nav>
+        <nav className="site-nav" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#news">News</a>
+          <a href="#research">Research</a>
+          <a href={profile.links.cv} target="_blank" rel="noreferrer">
+            CV
+          </a>
+        </nav>
+      </div>
     </header>
   );
 }
@@ -155,11 +157,13 @@ function Research() {
 
 export default function App() {
   return (
-    <main className="page">
+    <>
       <Header />
-      <About />
-      <News />
-      <Research />
-    </main>
+      <main className="page">
+        <About />
+        <News />
+        <Research />
+      </main>
+    </>
   );
 }

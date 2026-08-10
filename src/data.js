@@ -29,25 +29,13 @@ export const news = [
 export const publications = [
   {
     title:
-      "When and Where to Attack? Stage-wise Attention-Guided Adversarial Attack on Large Vision Language Models",
+      "Stage-wise Attention-Guided Region Sequencing for Adversarial Attacks on Large Vision-Language Models",
     authors:
       "Jaehyun Kwak, Nam Cao, Boryeong Cho, Segyu Lee, Sumyeong Ahn†, Se-Young Yun†",
     venue: "Under Review",
     note:
       "Adversarial attack method that perturbs high-attention regions in a stage-wise manner.",
     links: { Paper: "https://arxiv.org/pdf/2602.04356" },
-  },
-  {
-    title:
-      "QuRe: Query-Relevant Retrieval through Hard Negative Sampling in Composed Image Retrieval",
-    authors: "Jaehyun Kwak, Izaaz Inhar, Se-Young Yun, Sung-Ju Lee",
-    venue: "ICML 2025",
-    note:
-      "Composed image retrieval method trained with self-paced learning and hard negative sampling.",
-    links: {
-      Paper: "https://arxiv.org/pdf/2507.12416",
-      Code: "https://github.com/jaehyun-kwak/QuRe",
-    },
   },
   {
     title:
@@ -68,6 +56,18 @@ export const publications = [
     note:
       "Safety benchmark for unified multimodal models across seven input/output modality settings.",
     links: { Paper: "https://arxiv.org/pdf/2603.17476" },
+  },
+  {
+    title:
+      "QuRe: Query-Relevant Retrieval through Hard Negative Sampling in Composed Image Retrieval",
+    authors: "Jaehyun Kwak, Izaaz Inhar, Se-Young Yun, Sung-Ju Lee",
+    venue: "ICML 2025",
+    note:
+      "Composed image retrieval method trained with self-paced learning and hard negative sampling.",
+    links: {
+      Paper: "https://arxiv.org/pdf/2507.12416",
+      Code: "https://github.com/jaehyun-kwak/QuRe",
+    },
   },
   {
     title:

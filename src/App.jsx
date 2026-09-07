@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import { profile, news, publications } from "./data";
+import { profile, news, publications, patents } from "./data";
 
 const navSections = [
   { id: "about", label: "About" },
   { id: "news", label: "News" },
   { id: "research", label: "Research" },
+  { id: "patents", label: "Patents" },
 ];
 
 function useActiveSection() {
@@ -108,13 +109,20 @@ function Header({ activeSection }) {
   );
 }
 
-function AuthorList({ authors }) {
+function AuthorList({ authors, emphasize = false }) {
   const name = profile.name;
   const parts = authors.split(name);
 
   return parts.map((part, index) => (
     <span key={`${part}-${index}`}>
-      {index > 0 && <span className="author-me">{name}</span>}
+      {index > 0 &&
+        (emphasize ? (
+          <strong className="patent-author-me">
+            <em>{name}</em>
+          </strong>
+        ) : (
+          <span className="author-me">{name}</span>
+        ))}
       {part}
     </span>
   ));
@@ -220,6 +228,26 @@ function Research() {
   );
 }
 
+function Patents() {
+  return (
+    <section id="patents">
+      <SectionTitle>Patents</SectionTitle>
+
+      <div className="patents">
+        {patents.map((patent) => (
+          <article className="patent" key={patent.title}>
+            <h3>{patent.title}</h3>
+            <p className="authors">
+              <AuthorList authors={patent.authors} emphasize />
+            </p>
+            <p className="patent-status">{patent.status}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 export default function App() {
   const activeSection = useActiveSection();
 
@@ -230,6 +258,7 @@ export default function App() {
         <About />
         <News />
         <Research />
+        <Patents />
       </main>
     </>
   );

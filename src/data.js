@@ -20,7 +20,10 @@ export const profile = {
 
 export const news = [
   ["Jul. 2026", "DualDrift accepted to ICML 2026 Workshop."],
-  ["Feb. 2026", "When and Where to Attack? is now available on arXiv."],
+  [
+    "Feb. 2026",
+    "SAGA: Stage-wise Attention-Guided Adversarial Attacks is now available on arXiv.",
+  ],
   ["Jul. 2025", "QuRe accepted to ICML 2025."],
   ["May 2025", "SelfReplay accepted to SenSys 2025."],
   ["Mar. 2025", "Started my Ph.D. in the Graduate School of AI at KAIST."],
@@ -85,5 +88,19 @@ export const publications = [
     venue: "arXiv 2024",
     note: "Federated learning method for handling incomplete sensing modalities.",
     links: { Paper: "https://arxiv.org/pdf/2405.11828v1" },
+  },
+];
+
+export const patents = [
+  {
+    title:
+      "Apparatus and Method for Federated Learning in Modality Heterogeneity Environment",
+    authors: "Sung-Ju Lee, Adiba Orzikulova, Jaehyun Kwak, Jaemin Shin.",
+    status: "Patent application filed, Republic of Korea, 2026.",
+  },
+  {
+    title: "Method and Server for Federated Learning",
+    authors: "Sung-Ju Lee, Adiba Orzikulova, Jaehyun Kwak, Jaemin Shin.",
+    status: "Patent application filed, Republic of Korea, 2026.",
   },
 ];

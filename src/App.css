@@ -320,6 +320,40 @@ h2 {
   font-weight: 700;
 }
 
+.patents {
+  border-top: 1px solid var(--line-strong);
+}
+
+.patent {
+  padding: 22px 0 24px;
+  border-bottom: 1px solid var(--line);
+  min-width: 0;
+}
+
+.patent h3 {
+  margin: 0 0 5px;
+  color: #111914;
+  font-size: 18px;
+  font-weight: 720;
+  line-height: 1.38;
+  overflow-wrap: break-word;
+}
+
+.patent p {
+  margin: 3px 0;
+}
+
+.patent-author-me {
+  font-weight: 750;
+}
+
+.patent-status {
+  color: var(--accent-dark);
+  font-size: 14px;
+  font-weight: 750;
+  line-height: 1.45;
+}
+
 @media (max-width: 900px) {
   .about {
     grid-template-columns: 1fr;
@@ -383,6 +417,10 @@ h2 {
   }
 
   .pub {
+    padding: 19px 0 21px;
+  }
+
+  .patent {
     padding: 19px 0 21px;
   }
 }

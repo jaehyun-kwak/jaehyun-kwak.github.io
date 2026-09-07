@@ -104,3 +104,13 @@ export const patents = [
     status: "Patent application filed, Republic of Korea, 2026.",
   },
 ];
+
+export const academicServices = [
+  "AAAI 2027",
+  "TPAMI 2026",
+  "ACL 2026",
+  "NeurIPS 2026",
+  "ICML 2026",
+  "MobiCom 2023–2024",
+  "MobiSys 2023–2024",
+];

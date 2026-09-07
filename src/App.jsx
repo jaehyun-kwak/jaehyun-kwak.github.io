@@ -1,12 +1,19 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import { profile, news, publications, patents } from "./data";
+import {
+  profile,
+  news,
+  publications,
+  patents,
+  academicServices,
+} from "./data";
 
 const navSections = [
   { id: "about", label: "About" },
   { id: "news", label: "News" },
   { id: "research", label: "Research" },
   { id: "patents", label: "Patents" },
+  { id: "academic-services", label: "Academic Services" },
 ];
 
 function useActiveSection() {
@@ -248,6 +255,20 @@ function Patents() {
   );
 }
 
+function AcademicServices() {
+  return (
+    <section id="academic-services">
+      <SectionTitle>Academic Services</SectionTitle>
+
+      <ul className="academic-services-list">
+        <li>
+          <strong>Reviewer</strong> @ {academicServices.join(" | ")}
+        </li>
+      </ul>
+    </section>
+  );
+}
+
 export default function App() {
   const activeSection = useActiveSection();
 
@@ -259,6 +280,7 @@ export default function App() {
         <News />
         <Research />
         <Patents />
+        <AcademicServices />
       </main>
     </>
   );

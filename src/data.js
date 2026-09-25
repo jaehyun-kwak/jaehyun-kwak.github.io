@@ -13,12 +13,13 @@ export const profile = {
     kaist: "https://www.kaist.ac.kr/en/",
     lab: "https://osi.kaist.ac.kr/",
     advisor: "https://fbsqkd.github.io/",
-    cv: "https://drive.google.com/file/d/11hGj9fgn1KW_YHLPuHkcVbTzBO57RvUc/view?usp=sharing",
+    resume: "https://drive.google.com/file/d/11hGj9fgn1KW_YHLPuHkcVbTzBO57RvUc/view?usp=sharing",
     scholar: "https://scholar.google.com/citations?user=8oiT-7EAAAAJ&hl=ko",
   },
 };
 
 export const news = [
+  ["Sep. 2026", "SAGA and DualDrift accepted to NeurIPS 2026."],
   ["Jul. 2026", "DualDrift accepted to ICML 2026 Workshop."],
   [
     "Feb. 2026",
@@ -35,30 +36,10 @@ export const publications = [
       "Stage-wise Attention-Guided Region Sequencing for Adversarial Attacks on Large Vision-Language Models",
     authors:
       "Jaehyun Kwak, Nam Cao, Boryeong Cho, Segyu Lee, Sumyeong Ahn†, Se-Young Yun†",
-    venue: "Under Review",
+    venue: "NeurIPS 2026",
     note:
       "Adversarial attack method that perturbs high-attention regions in a stage-wise manner.",
     links: { Paper: "https://arxiv.org/pdf/2602.04356" },
-  },
-  {
-    title:
-      "DualDrift: Combining Forward and Reverse Drifts for One-Step Generative Modeling",
-    authors:
-      "Hojung Jung*, Juhyeong Kim*, Jaehyun Kwak, Boryeong Cho, Junhyeok Yang, Youngrok Park, Sangmin Bae, Se-Young Yun",
-    venue: "ICML 2026 Workshop",
-    note:
-      "One-step generative modeling method combining data-side forward drift and rollout-side reverse drift.",
-    links: { Paper: "https://openreview.net/forum?id=H5J9zbBlHX" },
-  },
-  {
-    title:
-      "UniSAFE: A Comprehensive Benchmark for Safety Evaluation of Unified Multimodal Models",
-    authors:
-      "Segyu Lee*, Boryeong Cho*, Hojung Jung*, Seokhyun An, Juhyeong Kim, Jaehyun Kwak, Yongjin Yang, Sangwon Jang, Youngrok Park, Wonjun Chang, Se-Young Yun",
-    venue: "Under Review",
-    note:
-      "Safety benchmark for unified multimodal models across seven input/output modality settings.",
-    links: { Paper: "https://arxiv.org/pdf/2603.17476" },
   },
   {
     title:
@@ -74,6 +55,16 @@ export const publications = [
   },
   {
     title:
+      "DualDrift: Combining Forward and Reverse Drifts for One-Step Generative Modeling",
+    authors:
+      "Hojung Jung*, Juhyeong Kim*, Jaehyun Kwak, Boryeong Cho, Junhyeok Yang, Youngrok Park, Sangmin Bae, Se-Young Yun",
+    venue: "NeurIPS 2026",
+    note:
+      "One-step generative modeling method combining data-side forward drift and rollout-side reverse drift.",
+    links: { Paper: "https://openreview.net/forum?id=H5J9zbBlHX" },
+  },
+  {
+    title:
       "SelfReplay: Adapting Self-Supervised Sensory Models via Adaptive Meta-Task Replay",
     authors:
       "Hyungjun Yoon, Jaehyun Kwak, Biniyam Tolera, Gaole Dai, Mo Li, Taesik Gong, Kimin Lee, Sung-Ju Lee",
@@ -81,6 +72,16 @@ export const publications = [
     note:
       "Few-shot domain adaptation method addressing domain shift between pre-training and fine-tuning data.",
     links: { Paper: "https://arxiv.org/pdf/2404.15305" },
+  },
+  {
+    title:
+      "UniSAFE: A Comprehensive Benchmark for Safety Evaluation of Unified Multimodal Models",
+    authors:
+      "Segyu Lee*, Boryeong Cho*, Hojung Jung*, Seokhyun An, Juhyeong Kim, Jaehyun Kwak, Yongjin Yang, Sangwon Jang, Youngrok Park, Wonjun Chang, Se-Young Yun",
+    venue: "Under Review",
+    note:
+      "Safety benchmark for unified multimodal models across seven input/output modality settings.",
+    links: { Paper: "https://arxiv.org/pdf/2603.17476" },
   },
   {
     title: "Federated Learning with Incomplete Sensing Modalities",

@@ -107,8 +107,8 @@ function Header({ activeSection }) {
               {label}
             </a>
           ))}
-          <a href={profile.links.cv} target="_blank" rel="noreferrer">
-            CV
+          <a href={profile.links.resume} target="_blank" rel="noreferrer">
+            Resume
           </a>
         </nav>
       </div>
@@ -166,8 +166,8 @@ function About() {
         </p>
 
         <div className="contact" aria-label="Profile links">
-          <a href={profile.links.cv} target="_blank" rel="noreferrer">
-            CV
+          <a href={profile.links.resume} target="_blank" rel="noreferrer">
+            Resume
           </a>
           <a href={`mailto:${profile.email}`}>Email</a>
           <a href={profile.links.scholar} target="_blank" rel="noreferrer">

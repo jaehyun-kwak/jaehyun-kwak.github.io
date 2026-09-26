@@ -160,11 +160,6 @@ function About() {
           {profile.researchFocus}
         </p>
 
-        <p>
-          Previously, I received my M.S. and B.S. degrees in Electrical
-          Engineering from KAIST.
-        </p>
-
         <div className="contact" aria-label="Profile links">
           <a href={profile.links.resume} target="_blank" rel="noreferrer">
             Resume
@@ -191,14 +186,16 @@ function News() {
   return (
     <section id="news">
       <SectionTitle>News</SectionTitle>
-      <div className="news">
+      <ol className="news" aria-label="News, newest first">
         {news.map(([date, text]) => (
-          <div className="news-row" key={`${date}-${text}`}>
+          <li className="news-row" key={`${date}-${text}`}>
             <div className="news-date">{date}</div>
-            <div>{text}</div>
-          </div>
+            <div className="news-content">
+              <p>{text}</p>
+            </div>
+          </li>
         ))}
-      </div>
+      </ol>
     </section>
   );
 }

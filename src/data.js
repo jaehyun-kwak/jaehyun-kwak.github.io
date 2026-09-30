@@ -66,16 +66,6 @@ export const publications = [
   },
   {
     title:
-      "SelfReplay: Adapting Self-Supervised Sensory Models via Adaptive Meta-Task Replay",
-    authors:
-      "Hyungjun Yoon, Jaehyun Kwak, Biniyam Tolera, Gaole Dai, Mo Li, Taesik Gong, Kimin Lee, Sung-Ju Lee",
-    venue: "SenSys 2025",
-    note:
-      "Few-shot domain adaptation method addressing domain shift between pre-training and fine-tuning data.",
-    links: { Paper: "https://arxiv.org/pdf/2404.15305" },
-  },
-  {
-    title:
       "UniSAFE: A Comprehensive Benchmark for Safety Evaluation of Unified Multimodal Models",
     authors:
       "Segyu Lee*, Boryeong Cho*, Hojung Jung*, Seokhyun An, Juhyeong Kim, Jaehyun Kwak, Yongjin Yang, Sangwon Jang, Youngrok Park, Wonjun Chang, Se-Young Yun",
@@ -83,6 +73,16 @@ export const publications = [
     note:
       "Safety benchmark for unified multimodal models across seven input/output modality settings.",
     links: { Paper: "https://arxiv.org/pdf/2603.17476" },
+  },
+  {
+    title:
+      "SelfReplay: Adapting Self-Supervised Sensory Models via Adaptive Meta-Task Replay",
+    authors:
+      "Hyungjun Yoon, Jaehyun Kwak, Biniyam Tolera, Gaole Dai, Mo Li, Taesik Gong, Kimin Lee, Sung-Ju Lee",
+    venue: "SenSys 2025",
+    note:
+      "Few-shot domain adaptation method addressing domain shift between pre-training and fine-tuning data.",
+    links: { Paper: "https://arxiv.org/pdf/2404.15305" },
   },
   {
     title: "Federated Learning with Incomplete Sensing Modalities",

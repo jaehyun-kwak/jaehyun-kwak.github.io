@@ -11,7 +11,7 @@ import {
 const navSections = [
   { id: "about", label: "About" },
   { id: "news", label: "News" },
-  { id: "research", label: "Research" },
+  { id: "research", label: "Publications" },
   { id: "patents", label: "Patents" },
   { id: "academic-services", label: "Academic Services" },
 ];
@@ -203,7 +203,7 @@ function News() {
 function Research() {
   return (
     <section id="research">
-      <SectionTitle>Research</SectionTitle>
+      <SectionTitle>Publications</SectionTitle>
       <p className="research-legend">
         C: Conference · W: Workshop · P: Preprint
       </p>

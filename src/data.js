@@ -19,7 +19,7 @@ export const profile = {
 };
 
 export const news = [
-  ["Sep. 2026", "UniSAFE accepted to NeurIPS 2026 Workshop."],
+  ["Sep. 2026", "UniSAFE accepted to NeurIPS 2026 Workshop (Oral)."],
   ["Sep. 2026", "SAGA and DualDrift accepted to NeurIPS 2026."],
   ["Jul. 2026", "DualDrift accepted to ICML 2026 Workshop."],
   [

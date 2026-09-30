@@ -144,7 +144,7 @@ function About() {
         <h1>{profile.name}</h1>
 
         <p className="lead">
-          I am a Ph.D. student in the Graduate School of AI at{" "}
+          I am a second-year Ph.D. student in the Graduate School of AI at{" "}
           <a href={profile.links.kaist} target="_blank" rel="noreferrer">
             KAIST
           </a>

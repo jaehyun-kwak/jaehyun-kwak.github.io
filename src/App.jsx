@@ -204,12 +204,18 @@ function Research() {
   return (
     <section id="research">
       <SectionTitle>Research</SectionTitle>
+      <p className="research-legend">
+        C: Conference · W: Workshop · P: Preprint
+      </p>
 
       <div className="pubs">
         {publications.map((pub) => (
           <article className="pub" key={pub.title}>
             <div className="pub-main">
-              <h3>{pub.title}</h3>
+              <h3 className="pub-title">
+                <span className="pub-label">[{pub.label}]</span>
+                <span>{pub.title}</span>
+              </h3>
               <p className="authors">
                 <AuthorList authors={pub.authors} />
               </p>

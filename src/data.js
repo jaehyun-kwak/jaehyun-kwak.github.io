@@ -33,6 +33,7 @@ export const news = [
 
 export const publications = [
   {
+    label: "C3",
     title:
       "Stage-wise Attention-Guided Region Sequencing for Adversarial Attacks on Large Vision-Language Models",
     authors:
@@ -45,6 +46,7 @@ export const publications = [
   {
     title:
       "QuRe: Query-Relevant Retrieval through Hard Negative Sampling in Composed Image Retrieval",
+    label: "C2",
     authors: "Jaehyun Kwak, Izaaz Inhar, Se-Young Yun, Sung-Ju Lee",
     venue: "ICML 2025",
     note:
@@ -57,6 +59,7 @@ export const publications = [
   {
     title:
       "DualDrift: Combining Forward and Reverse Drifts for One-Step Generative Modeling",
+    label: "C4",
     authors:
       "Hojung Jung*, Juhyeong Kim*, Jaehyun Kwak, Boryeong Cho, Junhyeok Yang, Youngrok Park, Sangmin Bae, Se-Young Yun",
     venue: "NeurIPS 2026",
@@ -67,6 +70,7 @@ export const publications = [
   {
     title:
       "UniSAFE: A Comprehensive Benchmark for Safety Evaluation of Unified Multimodal Models",
+    label: "W1",
     authors:
       "Segyu Lee*, Boryeong Cho*, Hojung Jung*, Seokhyun An, Juhyeong Kim, Jaehyun Kwak, Yongjin Yang, Sangwon Jang, Youngrok Park, Wonjun Chang, Se-Young Yun",
     venue: "NeurIPS 2026 Workshop",
@@ -77,6 +81,7 @@ export const publications = [
   {
     title:
       "SelfReplay: Adapting Self-Supervised Sensory Models via Adaptive Meta-Task Replay",
+    label: "C1",
     authors:
       "Hyungjun Yoon, Jaehyun Kwak, Biniyam Tolera, Gaole Dai, Mo Li, Taesik Gong, Kimin Lee, Sung-Ju Lee",
     venue: "SenSys 2025",
@@ -86,6 +91,7 @@ export const publications = [
   },
   {
     title: "Federated Learning with Incomplete Sensing Modalities",
+    label: "P1",
     authors: "Adiba Orzikulova*, Jaehyun Kwak*, Jaemin Shin, Sung-Ju Lee",
     venue: "arXiv 2024",
     note: "Federated learning method for handling incomplete sensing modalities.",

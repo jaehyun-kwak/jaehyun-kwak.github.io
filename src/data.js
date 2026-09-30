@@ -19,6 +19,7 @@ export const profile = {
 };
 
 export const news = [
+  ["Sep. 2026", "UniSAFE accepted to NeurIPS 2026 Workshop."],
   ["Sep. 2026", "SAGA and DualDrift accepted to NeurIPS 2026."],
   ["Jul. 2026", "DualDrift accepted to ICML 2026 Workshop."],
   [
@@ -78,7 +79,7 @@ export const publications = [
       "UniSAFE: A Comprehensive Benchmark for Safety Evaluation of Unified Multimodal Models",
     authors:
       "Segyu Lee*, Boryeong Cho*, Hojung Jung*, Seokhyun An, Juhyeong Kim, Jaehyun Kwak, Yongjin Yang, Sangwon Jang, Youngrok Park, Wonjun Chang, Se-Young Yun",
-    venue: "Under Review",
+    venue: "NeurIPS 2026 Workshop",
     note:
       "Safety benchmark for unified multimodal models across seven input/output modality settings.",
     links: { Paper: "https://arxiv.org/pdf/2603.17476" },

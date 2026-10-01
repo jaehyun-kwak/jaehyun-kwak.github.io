@@ -33,18 +33,7 @@ export const news = [
 
 export const publications = [
   {
-    title:
-      "DualDrift: Combining Forward and Reverse Drifts for One-Step Generative Modeling",
     label: "C4",
-    authors:
-      "Hojung Jung*, Juhyeong Kim*, Jaehyun Kwak, Boryeong Cho, Junhyeok Yang, Youngrok Park, Sangmin Bae, Se-Young Yun",
-    venue: "NeurIPS 2026",
-    note:
-      "One-step generative modeling method combining data-side forward drift and rollout-side reverse drift.",
-    links: { Paper: "https://openreview.net/forum?id=H5J9zbBlHX" },
-  },
-  {
-    label: "C3",
     title:
       "Stage-wise Attention-Guided Region Sequencing for Adversarial Attacks on Large Vision-Language Models",
     authors:
@@ -53,6 +42,28 @@ export const publications = [
     note:
       "Adversarial attack method that perturbs high-attention regions in a stage-wise manner.",
     links: { Paper: "https://arxiv.org/pdf/2602.04356" },
+  },
+  {
+    title:
+      "DualDrift: Combining Forward and Reverse Drifts for One-Step Generative Modeling",
+    label: "C3",
+    authors:
+      "Hojung Jung*, Juhyeong Kim*, Jaehyun Kwak, Boryeong Cho, Junhyeok Yang, Youngrok Park, Sangmin Bae, Se-Young Yun",
+    venue: "NeurIPS 2026",
+    note:
+      "One-step generative modeling method combining data-side forward drift and rollout-side reverse drift.",
+    links: { Paper: "https://openreview.net/forum?id=H5J9zbBlHX" },
+  },
+  {
+    title:
+      "UniSAFE: A Comprehensive Benchmark for Safety Evaluation of Unified Multimodal Models",
+    label: "W1",
+    authors:
+      "Segyu Lee*, Boryeong Cho*, Hojung Jung*, Seokhyun An, Juhyeong Kim, Jaehyun Kwak, Yongjin Yang, Sangwon Jang, Youngrok Park, Wonjun Chang, Se-Young Yun",
+    venue: "NeurIPS 2026 Workshop",
+    note:
+      "Safety benchmark for unified multimodal models across seven input/output modality settings.",
+    links: { Paper: "https://arxiv.org/pdf/2603.17476" },
   },
   {
     title:
@@ -77,17 +88,6 @@ export const publications = [
     note:
       "Few-shot domain adaptation method addressing domain shift between pre-training and fine-tuning data.",
     links: { Paper: "https://arxiv.org/pdf/2404.15305" },
-  },
-  {
-    title:
-      "UniSAFE: A Comprehensive Benchmark for Safety Evaluation of Unified Multimodal Models",
-    label: "W1",
-    authors:
-      "Segyu Lee*, Boryeong Cho*, Hojung Jung*, Seokhyun An, Juhyeong Kim, Jaehyun Kwak, Yongjin Yang, Sangwon Jang, Youngrok Park, Wonjun Chang, Se-Young Yun",
-    venue: "NeurIPS 2026 Workshop",
-    note:
-      "Safety benchmark for unified multimodal models across seven input/output modality settings.",
-    links: { Paper: "https://arxiv.org/pdf/2603.17476" },
   },
   {
     title: "Federated Learning with Incomplete Sensing Modalities",

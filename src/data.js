@@ -33,6 +33,17 @@ export const news = [
 
 export const publications = [
   {
+    title:
+      "DualDrift: Combining Forward and Reverse Drifts for One-Step Generative Modeling",
+    label: "C4",
+    authors:
+      "Hojung Jung*, Juhyeong Kim*, Jaehyun Kwak, Boryeong Cho, Junhyeok Yang, Youngrok Park, Sangmin Bae, Se-Young Yun",
+    venue: "NeurIPS 2026",
+    note:
+      "One-step generative modeling method combining data-side forward drift and rollout-side reverse drift.",
+    links: { Paper: "https://openreview.net/forum?id=H5J9zbBlHX" },
+  },
+  {
     label: "C3",
     title:
       "Stage-wise Attention-Guided Region Sequencing for Adversarial Attacks on Large Vision-Language Models",
@@ -58,14 +69,14 @@ export const publications = [
   },
   {
     title:
-      "DualDrift: Combining Forward and Reverse Drifts for One-Step Generative Modeling",
-    label: "C4",
+      "SelfReplay: Adapting Self-Supervised Sensory Models via Adaptive Meta-Task Replay",
+    label: "C1",
     authors:
-      "Hojung Jung*, Juhyeong Kim*, Jaehyun Kwak, Boryeong Cho, Junhyeok Yang, Youngrok Park, Sangmin Bae, Se-Young Yun",
-    venue: "NeurIPS 2026",
+      "Hyungjun Yoon, Jaehyun Kwak, Biniyam Tolera, Gaole Dai, Mo Li, Taesik Gong, Kimin Lee, Sung-Ju Lee",
+    venue: "SenSys 2025",
     note:
-      "One-step generative modeling method combining data-side forward drift and rollout-side reverse drift.",
-    links: { Paper: "https://openreview.net/forum?id=H5J9zbBlHX" },
+      "Few-shot domain adaptation method addressing domain shift between pre-training and fine-tuning data.",
+    links: { Paper: "https://arxiv.org/pdf/2404.15305" },
   },
   {
     title:
@@ -77,17 +88,6 @@ export const publications = [
     note:
       "Safety benchmark for unified multimodal models across seven input/output modality settings.",
     links: { Paper: "https://arxiv.org/pdf/2603.17476" },
-  },
-  {
-    title:
-      "SelfReplay: Adapting Self-Supervised Sensory Models via Adaptive Meta-Task Replay",
-    label: "C1",
-    authors:
-      "Hyungjun Yoon, Jaehyun Kwak, Biniyam Tolera, Gaole Dai, Mo Li, Taesik Gong, Kimin Lee, Sung-Ju Lee",
-    venue: "SenSys 2025",
-    note:
-      "Few-shot domain adaptation method addressing domain shift between pre-training and fine-tuning data.",
-    links: { Paper: "https://arxiv.org/pdf/2404.15305" },
   },
   {
     title: "Federated Learning with Incomplete Sensing Modalities",
